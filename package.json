@@ -1,0 +1,41 @@
+{
+  "name": "jsony-brunch",
+  "version": "0.0.1",
+  "author": "Douman",
+  "description": "Brunch plugin to simply convert JSON to JS modules",
+  "repositroy": "https://github.com/DoumanAsh/jsony-brunch",
+  "scripts": {
+    "test": "node --harmony-async-await ./node_modules/ava/cli.js --verbose",
+    "coverage": "node --harmony-async-await ./node_modules/nyc/bin/nyc.js node --harmony-async-await ./node_modules/ava/cli.js",
+    "lint": "eslint ."
+  },
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "eslint": "*",
+    "nyc": "*",
+    "ava": "*"
+  },
+  "ava": {
+    "files": [
+      "test/**/*.js"
+    ],
+    "source": [
+      "index.js"
+    ],
+    "failFast": true
+  },
+  "nyc": {
+    "all": true,
+    "include": [
+      "index.js"
+    ],
+    "reporter": [
+      "html",
+      "text",
+      "lcov"
+    ]
+  }
+
+}
