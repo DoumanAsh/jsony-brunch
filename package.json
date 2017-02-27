@@ -4,6 +4,11 @@
   "author": "Douman",
   "description": "Brunch plugin to simply convert JSON to JS modules",
   "repositroy": "https://github.com/DoumanAsh/jsony-brunch",
+
+  "bugs": {
+    "url": "https://github.com/DoumanAsh/jsony-brunch/issues"
+  },
+
   "scripts": {
     "test": "node --harmony-async-await ./node_modules/ava/cli.js --verbose",
     "coverage": "node --harmony-async-await ./node_modules/nyc/bin/nyc.js node --harmony-async-await ./node_modules/ava/cli.js",
